@@ -3,5 +3,5 @@
   get_url:
     url: https://github.com/mngk/download_file/blob/master/test_file.zip
     dest: /tmp/mng/
-  debug:
+    debug:
     msg: 'Download complete'
