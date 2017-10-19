@@ -1,2 +1,2 @@
 ---
-- include: playbooks/main.yaml
+- import_tasks: playbooks/main.yaml
