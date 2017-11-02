@@ -1,6 +1,7 @@
 ---
 - hosts: webservers
   gather_facts: no
-  remote_user: gk
+  become: true
+  become_user: gk
   roles:
     - webservers
