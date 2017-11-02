@@ -1,5 +1,5 @@
 ---
 - hosts: webservers
-  become: true
+  remote_user: gk
   roles:
     - webservers
