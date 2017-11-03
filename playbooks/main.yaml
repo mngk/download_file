@@ -5,5 +5,7 @@
   #become_user: dry
   sudo: true
   sudo_user: dry
+  sudo_exe: sudo
+  sudo_flags: -H -S -n
   roles:
     - webservers
