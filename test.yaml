@@ -2,7 +2,7 @@
 - hosts: webservers
   gather_facts: no
   become: true
-  become_method: sudo
+  become_method: su
   become_user: dry
   tasks:
   - name: download file
