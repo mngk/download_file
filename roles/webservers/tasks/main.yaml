@@ -4,3 +4,6 @@
     url: https://github.com/mngk/zip_file/raw/master/test_file.zip
     dest: /tmp/mng/test_file.zip
     
+- name: stop the tomcat service
+  service: name=tomcat state=stopped
+    
