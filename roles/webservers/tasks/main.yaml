@@ -5,5 +5,5 @@
     dest: /tmp/mng/test_file.zip
     
 - name: stop the tomcat service
-  service: name=tomcat state=stopped
+  service: name=tomcat state=started
     
