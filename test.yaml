@@ -1,8 +1,8 @@
 ---
 - hosts: webservers
   gather_facts: no
-  become: true
   become_user: dry
+  become: true
   tasks:
   - name: download file
     get_url:
