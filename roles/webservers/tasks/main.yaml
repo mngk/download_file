@@ -5,7 +5,6 @@
     dest: /tmp/mng/test_file.zip
   environment:
         http_proxy: http://gateway.zscaler.net:9400
-        https_proxy: https://gateway.zscaler.net:9400
     
 - name: ping
   ping:
