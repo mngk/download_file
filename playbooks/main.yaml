@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: solaris
   gather_facts: no
   become: true
   become_user: dry
