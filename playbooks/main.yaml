@@ -2,7 +2,7 @@
 - hosts: all
   gather_facts: no
   become: true
-  become_user: dry
+  become_user: vagrant
   #sudo: true
   #sudo_user: dry
   roles:
