@@ -5,6 +5,10 @@
   tasks:
     - name: TEST
       file:
-        path: /tmp/gk_test
+        path: /var/lib/awx/gk_test
         state: directory
+      delegate_to: localhost
+      
+    - name: Debug
+      shell: "echo $HOME && curl icanhazip.com"
       delegate_to: localhost
