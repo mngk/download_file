@@ -7,4 +7,4 @@
       file:
         path: /tmp/gk_test
         state: directory
-      delegate_to: localhost
+      #delegate_to: localhost
