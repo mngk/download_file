@@ -7,7 +7,4 @@
       file:
         path: /tmp/gk_test
         state: directory
-        owner: awx
-        group: awx
-        mode: '0777'
       delegate_to: localhost
