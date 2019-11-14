@@ -1,9 +1,9 @@
 ---
+
 - hosts: all
-  gather_facts: no
-  become: true
-  become_user: vagrant
-  #sudo: true
-  #sudo_user: dry
-  roles:
-    - webservers
+  tasks:
+    - name: TEST
+      file:
+        path: /tmp/gk_test
+        state: directory
+      delegate_to: localhost
