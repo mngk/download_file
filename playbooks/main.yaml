@@ -1,21 +1,21 @@
 ---
 
-- hosts: localhost
+- hosts: all
   gather_facts: no
   tasks:
     - name: TEST
       file:
         path: /tmp/gk_test
         state: directory
-      #delegate_to: localhost
+      delegate_to: localhost
       
-    - name: copy
-      copy:
-        src: "/var/lib/awx/test.txt"
-        dest: "/tmp/test.txt"
+    #- name: copy
+      #copy:
+        #src: "/var/lib/awx/test.txt"
+        #dest: "/tmp/test.txt"
         #remote_src: yes
       #delegate_to: localhost
       
     - name: Debug
-      shell: "curl icanhazip.com"
-      #delegate_to: localhost
+      shell: "touch ~/gk_test"
+      delegate_to: localhost
