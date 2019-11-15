@@ -5,8 +5,9 @@
   tasks:
     - name: TEST
       file:
-        path: /var/lib/awx/gk_test
+        path: /tmp/gk_test
         state: directory
+        force: yes
       delegate_to: localhost
       
     - name: Debug
