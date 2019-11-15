@@ -13,6 +13,7 @@
       copy:
         src: "/var/lib/awx/test.txt"
         dest: "/tmp/test.txt"
+      remote_src: yes
       delegate_to: localhost
       
     - name: Debug
