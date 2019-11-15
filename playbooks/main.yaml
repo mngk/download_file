@@ -7,7 +7,7 @@
       file:
         path: /tmp/gk_test
         state: directory
-      delegate_to: localhost
+      delegate_to: 18.144.15.30
       
     #- name: copy
       #copy:
@@ -18,4 +18,4 @@
       
     - name: Debug
       shell: "touch ~/gk_test"
-      delegate_to: localhost
+      delegate_to: 18.144.15.30
