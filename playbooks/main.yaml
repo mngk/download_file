@@ -5,9 +5,8 @@
   tasks:
     - name: TEST
       file:
-        path: /tmp/gk_test
+        paths: /tmp/gk_test
         state: directory
-        force: yes
       delegate_to: localhost
       
     - name: Debug
