@@ -10,5 +10,5 @@
       delegate_to: localhost
       
     - name: Debug
-      shell: "mkdir /tmp/gk_test"
+      shell: "curl icanhazip.com"
       delegate_to: localhost
