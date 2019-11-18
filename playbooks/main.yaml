@@ -13,7 +13,6 @@
       copy:
         src: /tmp/ansible.log
         dest: /tmp/gk_test/new.log
-        remote_src: yes
       delegate_to: 18.144.15.30
       
     #- name: copy
