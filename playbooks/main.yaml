@@ -9,6 +9,12 @@
         state: directory
       delegate_to: 18.144.15.30
       
+    - name: copy
+      copy:
+        src: /tmp/ansible.log
+        dest: /tmp/gk_test/new.log
+      delegate_to: 18.144.15.30
+      
     #- name: copy
       #copy:
         #src: "/var/lib/awx/test.txt"
