@@ -13,6 +13,7 @@
       copy:
         src: "/tmp/ansible.log"
         dest: "/tmp/gk_test/new.log"
+      become: no
       delegate_to: localhost
       
     #- name: copy
