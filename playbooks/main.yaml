@@ -5,14 +5,14 @@
   tasks:
     - name: TEST
       file:
-        path: /tmp/gk_test
+        path: "/tmp/gk_test"
         state: directory
       delegate_to: 18.144.15.30
       
     - name: copy
       copy:
-        src: /tmp/ansible.log
-        dest: /tmp/gk_test/new.log
+        src: "/tmp/ansible.log"
+        dest: "/tmp/gk_test/new.log"
       delegate_to: 18.144.15.30
       
     #- name: copy
