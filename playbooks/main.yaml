@@ -3,17 +3,13 @@
 - hosts: all
   gather_facts: no
   tasks:
-    - name: TEST
-      file:
-        path: "/tmp/gk_test"
-        state: directory
-      delegate_to: 18.144.15.30
+    - name: Debug on Host
+      debug:
+        msg: "{{ test_var }}"
       
-    - name: copy
-      copy:
-        src: "/tmp/ansible.log"
-        dest: "/tmp/gk_test/new.log"
-      become: no
+    - name: Debug on localhost
+      debug:
+        msg: "{{ test_var }}"
       delegate_to: localhost
       
     #- name: copy
